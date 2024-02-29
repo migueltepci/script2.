@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercício de JavaScript</title>
+<script>
+function verificarGostoCurso() {
+    var resposta = confirm("Você está gostando do curso?");
+
+    if (resposta == true) {
+        document.body.innerHTML += "<p>Parabéns!</p>";
+    } else {
+        document.body.innerHTML += "<p>Que pena!</p>";
+    }
+}
+</script>
+</head>
+<body onload="verificarGostoCurso();">
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercício de JavaScript</title>
+<script>
+window.onload = function() {
+    alert("Bem-vindo à recuperação de JavaScript");
+    
+    var num1 = 10;
+    var num2 = 5;
+    var soma = num1 + num2;
+    
+    document.body.innerHTML += "<p>A soma de " + num1 + " e " + num2 + " é igual a " + soma + ".</p>";
+    
+    verificarGostoCurso();
+};
+
+function verificarGostoCurso() {
+    var resposta = confirm("Você está gostando do curso?");
+
+    if (resposta == true) {
+        document.body.innerHTML += "<p>Parabéns!</p>";
+    } else {
+        document.body.innerHTML += "<p>Que pena!</p>";
+    }
+}
+</script>
+</head>
+<body>
+</body>
+</html>
